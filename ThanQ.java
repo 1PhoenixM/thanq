@@ -1,9 +1,20 @@
 package thanq;
 
+/*
+ * ThanQ.java
+ * This is a main class that checks the stack and the queue if you run it.
+ * It constructs a stack.
+ * It constructs a queue.
+ * It pushes StackNodes to the stack, and uses peek() and pop().
+ * It enqueues QueueNodes to the queue, and uses dequeue().
+ * 
+ */
 public class ThanQ {
 
 	public static void main(String[] args){
+		//New stack
 		Stack s = new Stack(new StackNode('a'));
+		//New queue
 		Queue q = new Queue(new QueueNode('b'));
 		
 		//Test stack
@@ -29,6 +40,9 @@ public class ThanQ {
 		System.out.println("Dequeue: " + q.dequeue().c); 
 		System.out.println("Dequeue: " + q.dequeue().c);
 		System.out.println("Dequeue: " + q.dequeue().c);
+		
+		//Check output here
+		System.out.println("Correct sequence: i i g e c a b d f h");
 		
 	}
 	
